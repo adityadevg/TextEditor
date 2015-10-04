@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TextEditor</string>
+    <string name="btn_new">Create new document</string>
+    <string name="btn_open">Open existing document</string>
+    <string name="app_new">New Document</string>
+    <string name="app_open">Select Document</string>
+    <string name="newdoc_name">New Document</string>
+    <string name="opendoc_name">Browse existing Document</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="newtextedit">Type here</string>
+    <string name="btn_retrieve">Retrieve File List</string>
+    <string name="filenametext">Type File Name</string>
+    <string name="welcome">Welcome</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

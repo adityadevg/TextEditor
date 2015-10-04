@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="epsilon.suven.texteditor"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-sdk 
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23"/>
+	
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"/>
+	
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:backupAgent="epsilon.suven.texteditor.ExampleAgent" 
+        android:allowBackup="true" >
+
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+    		android:value="AEdPqrEAAAAIW4S0YtCJbQ1704Z8HADIyTEM_wtZIQ_J7dw_dg" />
+        
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		
+		<activity
+            android:name=".TextEditorActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.TextEditor" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+       	<activity
+       	    android:label="@string/newdoc_name"
+        	android:name="NewDoc">
+    	    <intent-filter>
+                <action android:name="android.intent.action.NewDoc" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+    	</activity>
+        
+        <activity
+            android:label="@string/opendoc_name"
+        	android:name="OpenDoc">
+        	<intent-filter>
+                <action android:name="android.intent.action.OpenDoc" />
+                <category android:name="android.intent.category.DEFAULT" />
+         	</intent-filter>    
+        </activity>
+    </application>
+   
+</manifest>
